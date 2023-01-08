@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "BetterBuilding",
+  "version": "${version}",
+  "name": "BetterBuilding",
+  "description": "This simple mod allows you to place blocks in the air next to adjacent blocks, just like in Bedrock Minecraft.",
+  "authors": [
+    "Wyne"
+  ],
+  "contact": {
+    "repo": "https://github.com/Wyne10/BetterBuilding"
+  },
+  "license": "MIT",
+  "icon": "assets/BetterBuilding/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.wyne.betterbuilding.client.BetterBuildingClient"
+    ],
+    "main": [
+      "me.wyne.betterbuilding.BetterBuilding"
+    ]
+  },
+  "mixins": [
+    "BetterBuilding.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
