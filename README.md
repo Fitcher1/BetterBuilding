@@ -2,7 +2,6 @@
 ![GitHub](https://img.shields.io/badge/Version-1.0-green)
 ![GitHub](https://img.shields.io/badge/Java-17-yellow)
 ![GitHub](https://img.shields.io/github/license/Wyne10/BetterBuilding)
-[![GitHub](https://img.shields.io/badge/-Telegram-%2326A5E4?logo=telegram)](t.me/Wyne10)
 
 ### __I courage you NOT to use this mod on servers that don't allow it. It may cause anti-cheat warnings and eventually you could end up getting banned.__
 
