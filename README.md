@@ -8,4 +8,3 @@
 This simple mod allows you to place blocks in the air next to adjacent blocks, just like in Bedrock Minecraft.
 It makes building process a lot easier, especially for people who play on mobile java minecraft emulators.
 
-[]
