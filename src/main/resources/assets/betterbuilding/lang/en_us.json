@@ -1,0 +1,18 @@
+{
+  "modmenu.descriptionTranslation.betterbuilding": "This simple mod allows you to place blocks in the air next to adjacent blocks, just like in Bedrock Minecraft.",
+
+  "category.betterbuilding.header": "Better building",
+  "key.betterbuilding.toggleHorizontalPlacement": "Toggle horizontal placement",
+  "key.betterbuilding.toggleVerticalPlacement": "Toggle vertical placement",
+  "key.betterbuilding.toggleOutlineRendering": "Toggle outline rendering",
+
+
+  "text.autoconfig.betterbuilding.title": "Better building config",
+  "text.autoconfig.betterbuilding.option.horizontalPlacement": "Horizontal placement",
+  "text.autoconfig.betterbuilding.option.horizontalPlacement.@Tooltip": "Place blocks on horizontal surface",
+  "text.autoconfig.betterbuilding.option.verticalPlacement": "Vertical placement",
+  "text.autoconfig.betterbuilding.option.verticalPlacement.@Tooltip": "Place blocks on vertical surface",
+  "text.autoconfig.betterbuilding.option.renderOutline": "Render outline",
+  "text.autoconfig.betterbuilding.option.renderOutline.@Tooltip[0]": "Render block outline in the air",
+  "text.autoconfig.betterbuilding.option.renderOutline.@Tooltip[1]": "like if you aimed on the default block"
+}

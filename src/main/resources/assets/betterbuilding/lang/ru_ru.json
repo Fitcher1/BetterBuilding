@@ -1,0 +1,18 @@
+{
+  "modmenu.descriptionTranslation.betterbuilding": "Этот простой мод позволяет вам устанавливать блоки в воздухе, рядом с соединёнными блоками, прямо как в Bedrock Minecraft.",
+
+  "category.betterbuilding.header": "Better building",
+  "key.betterbuilding.toggleHorizontalPlacement": "Переключить horizontal placement",
+  "key.betterbuilding.toggleVerticalPlacement": "Переключить vertical placement",
+  "key.betterbuilding.toggleOutlineRendering": "Переключить outline rendering",
+
+
+  "text.autoconfig.betterbuilding.title": "Better building config",
+  "text.autoconfig.betterbuilding.option.horizontalPlacement": "Horizontal placement",
+  "text.autoconfig.betterbuilding.option.horizontalPlacement.@Tooltip": "Устанавливать блоки на горизонтальной поверхности",
+  "text.autoconfig.betterbuilding.option.verticalPlacement": "Vertical placement",
+  "text.autoconfig.betterbuilding.option.verticalPlacement.@Tooltip": "Устанавливать блоки на вертикальной поверхности",
+  "text.autoconfig.betterbuilding.option.renderOutline": "Render outline",
+  "text.autoconfig.betterbuilding.option.renderOutline.@Tooltip[0]": "Отображать обводку блока в воздухе",
+  "text.autoconfig.betterbuilding.option.renderOutline.@Tooltip[1]": "будто бы вы нацелились на обычный блок"
+}
