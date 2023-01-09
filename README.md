@@ -9,6 +9,7 @@ This simple mod allows you to place blocks in the air next to adjacent blocks, j
 It makes building process a lot easier, especially for people who play on mobile java minecraft emulators.
 
 ## Requirements
+- Java 17
 - [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
 
 ## Features
