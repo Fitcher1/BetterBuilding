@@ -21,8 +21,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modApi "me.shedaniel.cloth:cloth-config-fabric:5.3.63"
-    modApi "com.terraformersmc:modmenu:2.0.17"
+    modApi "me.shedaniel.cloth:cloth-config-fabric:4.14.64"
+    modApi "com.terraformersmc:modmenu:1.16.23"
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -41,7 +42,8 @@ public class BlockPlacement implements UseItemCallback {
     }
 
     public Vec3d getPlayerLookDirectionInversed(PlayerEntity player) {
-        return player.getEyePos().subtract(mod.getMinecraftClient().crosshairTarget.getPos());
+        Vec3d playerEyePos = new Vec3d(player.getX(), player.getEyeY(), player.getZ());
+        return playerEyePos.subtract(mod.getMinecraftClient().crosshairTarget.getPos());
     }
 
     public BlockHitResult getBlockPlacePosition(World world, PlayerEntity player, Vec3d playerLookDirectionInversed) {

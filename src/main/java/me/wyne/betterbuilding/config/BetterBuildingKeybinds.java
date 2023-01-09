@@ -60,7 +60,7 @@ public class BetterBuildingKeybinds implements ClientTickEvents.EndTick {
     @Override
     public void onEndTick(MinecraftClient client) {
         while (openConfigMenu.wasPressed()) {
-            mod.getMinecraftClient().setScreen(AutoConfig.getConfigScreen(ModConfig.class, mod.getMinecraftClient().currentScreen).get());
+            mod.getMinecraftClient().openScreen(AutoConfig.getConfigScreen(ModConfig.class, mod.getMinecraftClient().currentScreen).get());
         }
 
         while (toggleHorizontalPlacement.wasPressed()) {
