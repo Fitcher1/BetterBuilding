@@ -95,7 +95,7 @@ public class BlockPlacement implements UseItemCallback {
     }
 
     private Hand getBlockHand(PlayerEntity player) {
-        for (ItemStack handItem : player.getHandItems()) {
+        for (ItemStack handItem : player.getItemsHand()) {
             if (handItem.getItem() instanceof BlockItem) {
                 if (handItem.isItemEqual(player.getMainHandStack())) return Hand.MAIN_HAND;
                 else return Hand.OFF_HAND;
