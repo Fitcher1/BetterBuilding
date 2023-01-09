@@ -2,6 +2,7 @@
   "modmenu.descriptionTranslation.betterbuilding": "Этот простой мод позволяет вам устанавливать блоки в воздухе, рядом с соединёнными блоками, прямо как в Bedrock Minecraft.",
 
   "category.betterbuilding.header": "Better building",
+  "key.betterbuilding.openConfigMenu": "Открыть меню конфигурации",
   "key.betterbuilding.toggleHorizontalPlacement": "Переключить horizontal placement",
   "key.betterbuilding.toggleVerticalPlacement": "Переключить vertical placement",
   "key.betterbuilding.toggleOutlineRendering": "Переключить outline rendering",

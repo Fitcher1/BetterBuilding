@@ -1,5 +1,6 @@
 package me.wyne.betterbuilding.config;
 
+import me.shedaniel.autoconfig.AutoConfig;
 import me.wyne.betterbuilding.BetterBuilding;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -18,6 +19,7 @@ public class BetterBuildingKeybinds implements ClientTickEvents.EndTick {
 
     private final BetterBuilding mod;
 
+    private final KeyBinding openConfigMenu;
     private final KeyBinding toggleHorizontalPlacement;
     private final KeyBinding toggleVerticalPlacement;
     private final KeyBinding toggleOutlineRendering;
@@ -25,6 +27,13 @@ public class BetterBuildingKeybinds implements ClientTickEvents.EndTick {
     public BetterBuildingKeybinds(@NotNull final BetterBuilding mod)
     {
         this.mod = mod;
+
+        openConfigMenu = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                "key.betterbuilding.openConfigMenu",
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_B,
+                "category.betterbuilding.header"
+        ));
 
         toggleHorizontalPlacement = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.betterbuilding.toggleHorizontalPlacement",
@@ -50,6 +59,10 @@ public class BetterBuildingKeybinds implements ClientTickEvents.EndTick {
 
     @Override
     public void onEndTick(MinecraftClient client) {
+        while (openConfigMenu.wasPressed()) {
+            mod.getMinecraftClient().setScreen(AutoConfig.getConfigScreen(ModConfig.class, mod.getMinecraftClient().currentScreen).get());
+        }
+
         while (toggleHorizontalPlacement.wasPressed()) {
             mod.getConfig().horizontalPlacement = !mod.getConfig().horizontalPlacement;
             if (mod.getConfig().horizontalPlacement)
