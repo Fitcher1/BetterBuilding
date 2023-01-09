@@ -2,6 +2,7 @@
   "modmenu.descriptionTranslation.betterbuilding": "This simple mod allows you to place blocks in the air next to adjacent blocks, just like in Bedrock Minecraft.",
 
   "category.betterbuilding.header": "Better building",
+  "key.betterbuilding.openConfigMenu": "Open config menu",
   "key.betterbuilding.toggleHorizontalPlacement": "Toggle horizontal placement",
   "key.betterbuilding.toggleVerticalPlacement": "Toggle vertical placement",
   "key.betterbuilding.toggleOutlineRendering": "Toggle outline rendering",
