@@ -64,7 +64,7 @@ public class BlockPlacement implements UseItemCallback {
 
     private void placeBlock(Hand playerHand, PlayerEntity player, BlockHitResult blockPlacePosition) {
         if (blockPlacePosition != null) {
-            ActionResult blockPlaceResult = mod.getMinecraftClient().interactionManager.interactBlock(mod.getMinecraftClient().player, playerHand, blockPlacePosition);
+            ActionResult blockPlaceResult = mod.getMinecraftClient().interactionManager.interactBlock(mod.getMinecraftClient().player, mod.getMinecraftClient().world, playerHand, blockPlacePosition);
             if (blockPlaceResult.isAccepted() && blockPlaceResult.shouldSwingHand())
                 player.swingHand(playerHand);
         }
@@ -95,7 +95,7 @@ public class BlockPlacement implements UseItemCallback {
     }
 
     private Hand getBlockHand(PlayerEntity player) {
-        for (ItemStack handItem : player.getHandItems()) {
+        for (ItemStack handItem : player.getItemsHand()) {
             if (handItem.getItem() instanceof BlockItem) {
                 if (handItem.isItemEqual(player.getMainHandStack())) return Hand.MAIN_HAND;
                 else return Hand.OFF_HAND;

@@ -9,7 +9,7 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.text.Text;
+import net.minecraft.text.*;
 import net.minecraft.util.Formatting;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
@@ -66,23 +66,23 @@ public class BetterBuildingKeybinds implements ClientTickEvents.EndTick {
         while (toggleHorizontalPlacement.wasPressed()) {
             mod.getConfig().horizontalPlacement = !mod.getConfig().horizontalPlacement;
             if (mod.getConfig().horizontalPlacement)
-                client.player.sendMessage(Text.literal("Horizontal placement: ").append("ON").formatted(Formatting.GREEN), true);
+                client.player.sendMessage(Text.of("Horizontal placement: §aON"), true);
             else
-                client.player.sendMessage(Text.literal("Horizontal placement: ").append("OFF").formatted(Formatting.RED), true);
+                client.player.sendMessage(Text.of("Horizontal placement: §cOFF"), true);
         }
         while (toggleVerticalPlacement.wasPressed()) {
             mod.getConfig().verticalPlacement = !mod.getConfig().verticalPlacement;
             if (mod.getConfig().verticalPlacement)
-                client.player.sendMessage(Text.literal("Vertical placement: ").append("ON").formatted(Formatting.GREEN), true);
+                client.player.sendMessage(Text.of("Vertical placement: §aON"), true);
             else
-                client.player.sendMessage(Text.literal("Vertical placement: ").append("OFF").formatted(Formatting.RED), true);
+                client.player.sendMessage(Text.of("Vertical placement: §cOFF"), true);
         }
         while (toggleOutlineRendering.wasPressed()) {
             mod.getConfig().renderOutline = !mod.getConfig().renderOutline;
             if (mod.getConfig().renderOutline)
-                client.player.sendMessage(Text.literal("Outline rendering: ").append("ON").formatted(Formatting.GREEN), true);
+                client.player.sendMessage(Text.of("Outline rendering: §aON"), true);
             else
-                client.player.sendMessage(Text.literal("Outline rendering: ").append("OFF").formatted(Formatting.RED), true);
+                client.player.sendMessage(Text.of("Outline rendering: §cOFF"), true);
         }
     }
 
