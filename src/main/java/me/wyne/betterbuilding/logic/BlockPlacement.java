@@ -47,7 +47,7 @@ public class BlockPlacement implements UseItemCallback {
     public BlockHitResult getBlockPlacePosition(World world, PlayerEntity player, Vec3d playerLookDirectionInversed) {
         Vec3d crosshairPosition = mod.getMinecraftClient().crosshairTarget.getPos();
 
-        for (float i = 0.0f; i < 1f; i += 0.1f) {
+        for (float i = 0.0f; i < 1f; i += 0.05f) {
             BlockHitResult blockPlacePosition = world.raycast(new RaycastContext(crosshairPosition,
                     crosshairPosition.add(playerLookDirectionInversed.multiply(i)),
                     RaycastContext.ShapeType.OUTLINE,
